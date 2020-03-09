@@ -1,19 +1,65 @@
 /* GENERAL */
+body {
+  color: #fff;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
+ul {
+  margin: 0; padding: 0;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
 header {
   background-color: #00334d;
-  color: #fff;
 }
+
 
 /* UTILITIES */
 .relative {
   position: relative;
 }
 
+/* Star icon */
+.icon-lines {
+  position: relative;
+  margin: 25px 0;
+}
+
+.line-icon {
+  width: 140px;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  border-radius: 5px;
+}
+
+.line-icon.bf{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fas.fa-star {
+  font-size: 300%;
+  padding: 0 30px;
+}
+
+
+
+.line-icon.af{
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(-100%, -50%);
+}
 
 /* HEADER */
 .navbar-header h4 {
@@ -21,22 +67,31 @@ header {
   font-weight: 600;
 }
 
+
 /* JUMBOTRON */
 .jumbotron {
   background-color: #00cc99;
   text-align: center;
-  color: #fff;
 }
-
-.jumbotron i {
-  font-size: 250%;
-  padding: 0 30px;
-}
-
 
 /* PORTOFOLIO */
 #portfolio {
-  color: black;
+  margin-bottom: 25px;
+}
+
+#portfolio .container:first-child {
+  text-align: center;
+}
+
+#portfolio .line-icon {
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+}
+
+
+#portfolio .row h1,
+#portfolio .row i {
+  color: #000;
 }
 
 #portfolio .row .col-lg-4 {
@@ -51,8 +106,8 @@ header {
 
 /* ABOUT */
 #about {
+  padding: 20px 0 0px;
   background-color: #00cc99;
-  color: #fff;
 }
 
 #about .row {
@@ -81,7 +136,119 @@ header {
   transform: translateX(-100%);
 }
 
-#about-button-row button {
-  display: inline-block;
+#about-button-row .col-lg-12 {
+  padding: 25px 0;
+  text-align: center;
+}
+
+#about-button-row .col-lg-12 button {
+  background-color: inherit;
+  color: inherit;
+  font-size: 18px;
+}
+
+#about-button-row .col-lg-12 button i {
+  padding-right: 10px;
+
+}
+
+
+/* CONTACT */
+#contact {
+  color: #000;
+  text-align: center;
+  padding: 40px 0;
+}
+
+#contact .line-icon {
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+}
+
+.row.input-row {
+  position: relative;
+  margin: 35px 0px 105px;
+}
+
+#contact .contact-input {
+  margin-bottom: 20px;
+}
+
+#contact .contact-input * {
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+#contact .btn.btn-success {
+  position: absolute;
+  margin: 15px;
+  padding: 15px;
+  left: 15px;
+  font-size: 18px;
+}
+
+
+/* FOOTER  */
+footer {
+  background-color: #006666;
+}
+
+/* Footer: AROUND-WEB */
+#around-web {
+  text-align: center;
+  padding: 25px 0;
+}
+
+#around-web .col-lg-4 {
+  padding-bottom: 25px;
+}
+
+#around-web p {
   margin: 0 auto;
+  width: 200px;
+}
+
+#around-web p a {
+  color: #00cc99;
+}
+
+#around-web p a:hover {
+  opacity: 0.5;
+}
+
+#around-web .social-row i {
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  line-height: 337%;
+}
+
+#around-web .social-row i:hover {
+  background: #fff;
+  color: #006666;
+}
+
+/* About: SECOND ROW */
+#input-row .input-group {
+}
+
+#input-row .input-group .col-lg-8 .form-control {
+  width: 780px;
+}
+
+/* Footer: MAIN FOOTER */
+#main-footer {
+  background-color: #00334d;
+  padding: 15px;
+  text-align: center;
+  font-size: 10px;
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+
 }
