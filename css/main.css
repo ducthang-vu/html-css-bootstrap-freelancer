@@ -80,3 +80,8 @@ header {
   left: 95%;
   transform: translateX(-100%);
 }
+
+#about-button-row button {
+  display: inline-block;
+  margin: 0 auto;
+}
