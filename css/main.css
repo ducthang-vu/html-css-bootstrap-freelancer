@@ -55,6 +55,7 @@ header {
 .navbar-header h4 {
   line-height: 200%;
   font-weight: 600;
+  padding-left: 10px;
 }
 
 header button.navbar-toggle {
@@ -87,23 +88,46 @@ header .icon-bar {
 
 #portfolio .fas.fa-star {
   background-color: #fff;
-}
-
-#portfolio .row h1,
-#portfolio .row i {
   color: #000;
 }
 
-#portfolio .row .col-lg-4 {
-  margin-bottom: 10px;
+#portfolio .row h1,
+#portfolio .row:first-child i {
+  color: #000;
 }
 
-#portfolio .col-lg-4 .box {
-  margin: auto;
+/* Portfoglio: ROW-IMG */
+.row-img > * {
+  padding: 15px;
+}
+
+.row-img .box {
   width: 100%;
-  height: 280px;
+  height: 100%;
 }
 
+.row-img .hover-effect {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.row-img .fas.fa-plus {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 500%;
+  color: rgba(0, 0, 0, 0);
+}
+
+.row-img .hover-effect:hover {
+  background-color: rgba(0, 204, 153, 0.8);
+}
+.row-img .hover-effect:hover .fas.fa-plus {
+  color: #fff;
+}
 
 /* ABOUT */
 #about {
@@ -260,11 +284,4 @@ footer {
   padding: 15px;
   text-align: center;
   font-size: 10px;
-}
-
-
-
-
-@media screen and (max-width: 991px) {
-
 }
