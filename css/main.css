@@ -3,7 +3,7 @@ body {
   color: #fff;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
   color: inherit;
 }
@@ -15,10 +15,6 @@ ul {
 li {
   list-style: none;
   display: inline-block;
-}
-
-header {
-  background-color: #00334d;
 }
 
 
@@ -60,11 +56,22 @@ header {
 }
 
 /* HEADER */
+header {
+  background-color: #00334d;
+}
+
 .navbar-header h4 {
   line-height: 200%;
   font-weight: 600;
 }
 
+header button.navbar-toggle {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header .icon-bar {
+  background: gray;
+}
 
 /* JUMBOTRON */
 .jumbotron {
@@ -179,6 +186,14 @@ header {
   border-radius: 0;
   border-bottom: 1px solid gray;
   box-shadow: none;
+}
+
+#contact .contact-input *::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+}
+
+#contact .contact-input *::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
 }
 
 #contact .btn.btn-success {
