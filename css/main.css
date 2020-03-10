@@ -170,12 +170,15 @@ header {
 }
 
 #contact .contact-input {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 #contact .contact-input * {
+  padding-bottom: 20px;
   border: none;
+  border-radius: 0;
   border-bottom: 1px solid gray;
+  box-shadow: none;
 }
 
 #contact .btn.btn-success {
