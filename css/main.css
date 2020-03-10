@@ -24,35 +24,27 @@ li {
 }
 
 /* Star icon */
-.icon-lines {
-  position: relative;
-  margin: 25px 0;
+.star-box {
+  height: 50px;
+  padding: 20px;
+  text-align: center;
 }
 
-.line-icon {
-  width: 140px;
+.icon-lines {
+  position: relative;
+  margin: 0 auto;
+  width: 350px;
   border-top: 4px solid #fff;
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid #fff;;
   border-radius: 5px;
 }
 
-.line-icon.bf{
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .fas.fa-star {
-  font-size: 300%;
-  padding: 0 30px;
-}
-
-.line-icon.af{
   position: absolute;
-  left: 100%;
-  top: 50%;
-  transform: translate(-100%, -50%);
+  font-size: 300%;
+  padding: 0 10px;
+  transform: translate(-50%, -50%);
+  background: #00cc99;
 }
 
 /* HEADER */
@@ -88,11 +80,14 @@ header .icon-bar {
   text-align: center;
 }
 
-#portfolio .line-icon {
+#portfolio .icon-lines {
   border-top: 4px solid #000;
   border-bottom: 4px solid #000;
 }
 
+#portfolio .fas.fa-star {
+  background-color: #fff;
+}
 
 #portfolio .row h1,
 #portfolio .row i {
@@ -124,7 +119,7 @@ header .icon-bar {
   text-align: center;
 }
 
-#about-second-row .col-lg-5:nth-child(2) {
+#about-third-row .col-lg-5:nth-child(2) {
   margin-left: 0;
   padding-left: 0;
 }
@@ -166,9 +161,13 @@ header .icon-bar {
   padding: 40px 0;
 }
 
-#contact .line-icon {
+#contact .icon-lines {
   border-top: 4px solid #000;
   border-bottom: 4px solid #000;
+}
+
+#contact .fas.fa-star {
+  background-color: #fff;
 }
 
 .row.input-row {
