@@ -36,7 +36,7 @@ li {
   width: 350px;
   border-top: 4px solid #fff;
   border-bottom: 4px solid #fff;;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .fas.fa-star {
@@ -49,7 +49,13 @@ li {
 
 /* HEADER */
 header {
-  background-color: #00334d;
+  position: fixed;
+  top: 0%;
+  height: 66px;
+  width: 100%;
+  padding-top: 5px;
+  background: #00334d;
+  z-index: 1;
 }
 
 .navbar-header h4 {
@@ -68,6 +74,7 @@ header .icon-bar {
 
 /* JUMBOTRON */
 .jumbotron {
+  margin-top: 66px;
   background-color: #00cc99;
   text-align: center;
 }
@@ -259,9 +266,6 @@ footer {
 }
 
 /* About: SECOND ROW */
-#input-row .input-group {
-}
-
 #input-row .input-group .col-lg-8 .form-control {
   width: 780px;
 }
