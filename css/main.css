@@ -23,7 +23,7 @@ li {
   position: relative;
 }
 
-/* Star icon */
+/* UTILITIES: Star icon */
 .star-box {
   height: 50px;
   padding: 20px;
@@ -46,6 +46,7 @@ li {
   transform: translate(-50%, -50%);
   background: #00cc99;
 }
+
 
 /* HEADER */
 header {
@@ -279,6 +280,7 @@ footer {
 }
 
 
+
 /* RESPONSIVE */
 @media screen and (min-width: 992px) {
 
@@ -286,6 +288,7 @@ footer {
     padding-left: 0;
   }
 }
+
 
 @media screen and (max-width: 991px) {
   #about-third-row > .col-lg-4 p {
