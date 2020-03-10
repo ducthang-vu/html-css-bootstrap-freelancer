@@ -19,6 +19,14 @@ li {
 
 
 /* UTILITIES */
+.blue {
+  background: #00334d;
+}
+
+.green {
+  background: #00cc99;
+}
+
 .relative {
   position: relative;
 }
@@ -55,7 +63,6 @@ header {
   height: 66px;
   width: 100%;
   padding-top: 5px;
-  background: #00334d;
   z-index: 1;
 }
 
@@ -73,20 +80,16 @@ header .icon-bar {
   background: gray;
 }
 
+
 /* JUMBOTRON */
 .jumbotron {
   margin-top: 66px;
-  background-color: #00cc99;
-  text-align: center;
 }
+
 
 /* PORTOFOLIO */
 #portfolio {
   margin-bottom: 25px;
-}
-
-#portfolio .container:first-child {
-  text-align: center;
 }
 
 #portfolio .icon-lines {
@@ -140,26 +143,22 @@ header .icon-bar {
 /* ABOUT */
 #about {
   padding: 20px 0 0px;
-  background-color: #00cc99;
 }
 
 #about .row {
   margin-bottom: 25px;
 }
 
-#about .row:first-child {
-  text-align: center;
-}
-
 #about-third-row > * {
-  text-align: left;
   line-height: 150%;
   font-size: 18px;
+}
+#about-third-row > * p {
+  padding-right: 10px;
 }
 
 #about-button-row .col-lg-12 {
   padding: 25px 0;
-  text-align: center;
 }
 
 #about-button-row .col-lg-12 button {
@@ -177,7 +176,6 @@ header .icon-bar {
 /* CONTACT */
 #contact {
   color: #000;
-  text-align: center;
   padding: 40px 0;
 }
 
@@ -191,7 +189,6 @@ header .icon-bar {
 }
 
 .row.input-row {
-  position: relative;
   margin: 35px 0px 105px;
 }
 
@@ -231,7 +228,6 @@ footer {
 
 /* Footer: AROUND-WEB */
 #around-web {
-  text-align: center;
   padding: 25px 0;
 }
 
@@ -273,9 +269,7 @@ footer {
 
 /* Footer: MAIN FOOTER */
 #main-footer {
-  background-color: #00334d;
   padding: 15px;
-  text-align: center;
   font-size: 10px;
 }
 
